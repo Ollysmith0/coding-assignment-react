@@ -1,5 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import Tickets from './tickets';
+import Users from './users';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClientProvider, useQueryClient } from 'react-query';
@@ -10,8 +9,8 @@ describe('Tickets', () => {
     const component = renderer.create(
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-          <Tickets
-            tickets={
+          <Users
+            users={
               [
                 // {
                 //   assigneeId: null,
@@ -21,7 +20,6 @@ describe('Tickets', () => {
                 // },
               ]
             }
-            users={[]}
             refetch={jest.fn()}
             status=""
           />

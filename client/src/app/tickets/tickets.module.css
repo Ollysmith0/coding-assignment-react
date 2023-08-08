@@ -1,2 +1,12 @@
 .tickets {
 }
+
+.ticket {
+    cursor: pointer;
+    display: block;
+    width: 200px;
+}
+
+.ticket:hover {
+    color: blue;
+}
